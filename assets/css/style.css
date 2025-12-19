@@ -53,17 +53,41 @@
     font-size: 1.3rem;
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 22px;
+  height: 22px;
+  border-right: 2px solid #F0F8FF;
+  border-bottom: 2px solid #F0F8FF;
+  opacity: 0.85;
+}
+
+.scroll-indicator::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 22px;
+  height: 22px;
+  border-right: 2px solid #F0F8FF;
+  border-bottom: 2px solid #F0F8FF;
+  opacity: 0.45;
+}
+
+
 @media (max-width: 600px) {
     .hero {
-        height: 100vh;
-        padding-top: 20px;
+        padding-top: 9px;
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        padding-top: 380px;
+    }
 
-
+    .portfolio h1{
+        font-size: 1rem;
     }
 }
