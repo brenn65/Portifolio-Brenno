@@ -80,10 +80,8 @@
 
 @media (max-width: 600px) {
     .hero {
-        padding-top: 9px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
