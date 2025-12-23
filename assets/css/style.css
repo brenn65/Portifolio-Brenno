@@ -58,38 +58,38 @@ html {
 
 .portfolio p {
     color: aliceblue;
-    padding-top: 5px;
+    padding-top: 15px;
     font-size: 1rem;
 }
 
 .scroll-indicator {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 22px;
-  height: 22px;
-  border-right: 2px solid #F0F8FF;
-  border-bottom: 2px solid #F0F8FF;
-  opacity: 0.85;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 22px;
+    height: 22px;
+    border-right: 2px solid #F0F8FF;
+    border-bottom: 2px solid #F0F8FF;
+    opacity: 0.85;
 }
 
 .scroll-indicator::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 22px;
-  height: 22px;
-  border-right: 2px solid #F0F8FF;
-  border-bottom: 2px solid #F0F8FF;
-  opacity: 0.45;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 22px;
+    height: 22px;
+    border-right: 2px solid #F0F8FF;
+    border-bottom: 2px solid #F0F8FF;
+    opacity: 0.45;
 }
 
 .container {
-    padding-top: 10px;
-    max-width: 300px;
-    min-width: 300px;
+    padding-top: 30px;
+    max-width: 1300px;
+    min-width: auto;
 }
 
 .carrossel {
@@ -106,6 +106,7 @@ html {
     min-height: 300px;
     min-width: auto;
     scroll-snap-align: center;
+
     & img {
         border-radius: 20px;
         height: 300px;
@@ -119,11 +120,46 @@ html {
         align-items: center;
     }
 
-    .portfolio h1{
+    .portfolio h1 {
+        padding-top: 10px;
         font-size: 1rem;
+    }
+
+    .portfolio p {
+        padding-top: 15px;
     }
 
     #sp {
         font-size: 1.2rem;
     }
+
+
+    .container {
+        padding-top: 25px;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .carrossel {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1.2rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .card {
+        min-height: 300px;
+        min-width: auto;
+        scroll-snap-align: center;
+
+        & img {
+            border-radius: 20px;
+            height: 300px;
+        }
+    }
+
+
 }
