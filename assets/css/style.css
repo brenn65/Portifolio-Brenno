@@ -150,7 +150,7 @@ html {
 .contact p {
     font-size: 0.8em;
     text-align: center;
-    margin: 0 40px;
+    margin: 0 80px;
 
 
 }
@@ -162,11 +162,12 @@ html {
 }
 
 .contact img {
-    margin-top: 90px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100px;
+    height: 120px;
+    width: auto;
 }
 
 footer {
